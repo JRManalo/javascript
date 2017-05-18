@@ -37,3 +37,25 @@ console.log("Counting all uppercase Bs");
 	countBs("ball is life");
 	countBs("I like Big Butts and I cannot lie");
 	countBs("BumbleBees Bite Brown Boogers");
+    
+//Step 4.
+//Write the countChar function (and the code needed to test it)
+//described on page 56 ("Bean Counting") in your text.
+
+function countChar(string, character)
+{
+    var number = 0;
+    for(i = 0; i < string.length; i++)
+    {
+        if (string.charAt(i) === "B" || string.charAt(i) === character)
+        {
+            number++;
+        }
+    }
+    console.log(number);
+}
+
+console.log("Counting all uppercase Bs and passed in char");
+	countChar("Backstreet Boys are back", "a");
+	countChar("There's a box in the corner", "e");
+	countChar("My sister has a Boyfriend", "M");
