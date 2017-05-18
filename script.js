@@ -59,3 +59,16 @@ console.log("Counting all uppercase Bs and passed in char");
 	countChar("Backstreet Boys are back", "a");
 	countChar("There's a box in the corner", "e");
 	countChar("My sister has a Boyfriend", "M");
+    
+//Step 5.    
+//Rewrite countBs to use countChar.
+function countBs(string)
+{
+	return countChar(string, "B");
+}
+
+console.log("Counting all uppercase Bs using countChar in countBs");
+console.log("The count should be exactly the same as first countBs function");
+	countBs("ball is life");
+	countBs("I like Big Butts and I cannot lie");
+	countBs("BumbleBees Bite Brown Boogers");
